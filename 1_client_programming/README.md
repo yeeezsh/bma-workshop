@@ -54,7 +54,7 @@ Reload the page to see result! :D
       
     <div class="gamecard">
       <div class="gamecard__image">
-        <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1586196476" alt="Dota 2">
+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1586196476" alt="Dota 2" />
       </div>
       <div class="gamecard__info">
         <h2 class="gamecard__title">Dota 2</h2>
@@ -181,7 +181,7 @@ First to finish this step wins more snacks :D. Good luck!
 +    
 +    <div class="gamecard">
 +      <div class="gamecard__image">
-+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.+jpg?t=1586196476" alt="Dota 2">
++        <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.+jpg?t=1586196476" alt="Dota 2" />
 +      </div>
 +      <div class="gamecard__info">
 +        <h2 class="gamecard__title">Dota 2</h2>
@@ -202,7 +202,6 @@ First to finish this step wins more snacks :D. Good luck!
 `style.css`
 
 ```diff
-/* dark theme */
 html {
   font-family: sans-serif;
 }
