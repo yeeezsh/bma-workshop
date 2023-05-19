@@ -1,7 +1,8 @@
 <!-- Student starts coding here -->
 
 # Client programming
-## Step 1: Get the code
+
+## Step 0: Get the code
 1. Open `Visual Studio Code`
 1. Press `Ctrl + Shift + P` to open the command palette
 1. Type `Git: Clone` and press `Enter`
