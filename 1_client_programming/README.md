@@ -2,26 +2,26 @@
 
 # Client programming
 
-## Step 0: Get the code
-1. Open `Visual Studio Code`
-1. Press `Ctrl + Shift + P` to open the command palette
-1. Type `Git: Clone` and press `Enter`
-1. Enter the following URL: `https://github.com/encX/bma-workshop.git`
-1. Press `Enter` and select a folder to clone the repository
+## Step 0: ดูดโค้ด
+1. เปิดโปรแกรม `Visual Studio Code`
+1. กด `Ctrl + Shift + P` เพื่อเปิด command palette
+1. พิมพ์ `Git: Clone` ลงในกล่อง แล้วกด `Enter`
+1. ใส่ URL นี้ลงไป `https://github.com/encX/bma-workshop.git`
+1. กด `Enter` แล้วเลือกโฟลเดอร์ที่จะเก็บโค้ด
 
-## Step 1: Create store title
-Add this in `<body>`
+## Step 1: ตั้งชื่อร้านค้า
+เพิ่มโค้ดข้างล่างนี้เข้าไปใน `<body>`
 
 ```html
 <h1>Quick Steam Store</h1>
 ```
 
-Reload the page to see result! :D
+ลอง Refresh ดู! :D
 
 
-## Step 2: Add style
-1. Create a new file called `style.css`
-2. Add this to `style.css`
+## Step 2: แต่งสวย
+1. สร้างไฟล์ชื่อ `style.css`
+2. เพิ่มโค้ดข้างล่างเข้าไปในไฟล์ `style.css`
 
 ```css
 html, body {
@@ -35,20 +35,22 @@ html, body {
 }
 ```
 
-3. In `index.html`, add this anywhere between `<head>` and `</head>`
+3. เพิ่มโค้ดข้างล่างเข้าไปในไฟล์ `index.html` ตรงระหว่าง `<head>` และ `</head>`
+
 ```html
 <link rel="stylesheet" href="style.css">
 ```
 
-Reload the page to see result! :D
+ลอง Refresh ดู! :D
 
 
-## Step 3: Add a game card
-1. Add this to the line after `</h1>`
+## Step 3: เพิ่มรายการเกม (game card)
+
+1. เพิ่มโค้ดข้างล่างนี้ ไว้หลัง `</h1>`
 
 ```html
   <div class="gamelist">
-      
+
     <div class="gamecard">
       <div class="gamecard__image">
         <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.jpg?t=1586196476" alt="Dota 2" />
@@ -64,8 +66,9 @@ Reload the page to see result! :D
   </div>
 ```
 
-## Step 4: Add style for game card
-1. Add this to the end of `style.css`
+## Step 4: แต่งสวยให้ game card
+
+1. เพิ่มโค้ดข้างล่างนี้ต่อจากอันเดิมใน `style.css`
 
 ```css
 .gamecard {
@@ -132,12 +135,13 @@ Reload the page to see result! :D
 }
 ```
 
-Reload the page to see result! :D
+ลอง Refresh ดู! :D
 
 
-## Step 5: Add script to buy game
-1. Create a new file called `script.js`
-2. Add this to `script.js`
+## Step 5: ใส่โค้ดให้ขายเกมได้
+
+1. สร้างไฟล์ชื่อ `script.js`
+2. เพิ่มโค้ดข้างล่างนี้ลงในไฟล์ `script.js`
 
 ```js
 document
@@ -147,20 +151,21 @@ document
   }));
 ```
 
-3. In `index.html`, add this anywhere before `</body>`
+3. เพิ่มโค้ดข้างล่างนี้หลัง `</body>` ในไฟล์ `index.html`
 
 ```html
 <script src="script.js"></script>
 ```
 
-Reload the page, and try clicking on the `Buy` button!
+ลอง Refresh แล้วลองซื้อเกม `Buy` ดู! :D
 
-## Step bonus: Try adding more games!
-First to finish this step wins more snacks :D. Good luck!
+## Step bonus: ขายมากกว่า 1 เกม
+
+ใครมีเกมขายมากกว่าเกมเดียวเป็นคนแรก รับของรางวัลไป :D
 
 ---
 
-## At the end of this section, your code should look like this:
+## จบบทนี้แล้ว ทุกคนจะมีไฟล์หน้าตาแบบนี้:
 
 `index.html`
 
