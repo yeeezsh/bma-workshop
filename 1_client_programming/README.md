@@ -10,7 +10,8 @@
 1. กด `Enter` แล้วเลือกโฟลเดอร์ที่จะเก็บโค้ด
 
 ## Step 1: ตั้งชื่อร้านค้า
-เพิ่มโค้ดข้างล่างนี้เข้าไปใน `<body>`
+
+ก็อปโค้ดข้างล่างนี้เข้าไปไว้ระหว่าง `<body>` และ `</body>`
 
 ```html
 <h1>Quick Steam Store</h1>
@@ -21,7 +22,7 @@
 
 ## Step 2: แต่งสวย
 1. สร้างไฟล์ชื่อ `style.css`
-2. เพิ่มโค้ดข้างล่างเข้าไปในไฟล์ `style.css`
+2. ก็อปโค้ดข้างล่างใส่ไว้ในไฟล์ `style.css`
 
 ```css
 html, body {
@@ -46,7 +47,7 @@ html, body {
 
 ## Step 3: เพิ่มรายการเกม (game card)
 
-1. เพิ่มโค้ดข้างล่างนี้ ไว้หลัง `</h1>`
+1. ก็อปโค้ดข้างล่างนี้ไปไว้ไว้หลัง `</h1>`
 
 ```html
   <div class="gamelist">
@@ -68,7 +69,7 @@ html, body {
 
 ## Step 4: แต่งสวยให้ game card
 
-1. เพิ่มโค้ดข้างล่างนี้ต่อจากอันเดิมใน `style.css`
+1. ก็อปโค้ดข้างล่างนี้ไปไว้ต่อจากอันเดิมใน `style.css`
 
 ```css
 .gamecard {
@@ -141,7 +142,7 @@ html, body {
 ## Step 5: ใส่โค้ดให้ขายเกมได้
 
 1. สร้างไฟล์ชื่อ `script.js`
-2. เพิ่มโค้ดข้างล่างนี้ลงในไฟล์ `script.js`
+2. ก็อปโค้ดข้างล่างนี้ไปไว้ในไฟล์ `script.js`
 
 ```js
 document
@@ -151,7 +152,7 @@ document
   }));
 ```
 
-3. เพิ่มโค้ดข้างล่างนี้หลัง `</body>` ในไฟล์ `index.html`
+3. ก็อปโค้ดข้างล่างนี้ไปไว้หลัง `</body>` ในไฟล์ `index.html`
 
 ```html
 <script src="script.js"></script>
@@ -174,28 +175,28 @@ document
 <html lang="en">
 <head>
   <title>My website</title>
-+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <h1>Quick Steam Store</h1>
 
-+  <div class="gamelist">
-+    
-+    <div class="gamecard">
-+      <div class="gamecard__image">
-+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.+jpg" alt="Dota 2" />
-+      </div>
-+      <div class="gamecard__info">
-+        <h2 class="gamecard__title">Dota 2</h2>
-+        <h4 class="gamecard__rating">1 / 5</h4>
-+        <div class="gamecard__price">$39.99</div>
-+        <div class="gamecard__button"><button>Buy</button></div>
-+      </div>
-+    </div>
-+
-+  </div>
+  <div class="gamelist">
+    
+    <div class="gamecard">
+      <div class="gamecard__image">
+        <img src="https://steamcdn-a.akamaihd.net/steam/apps/570/header.+jpg" alt="Dota 2" />
+      </div>
+      <div class="gamecard__info">
+        <h2 class="gamecard__title">Dota 2</h2>
+        <h4 class="gamecard__rating">1 / 5</h4>
+        <div class="gamecard__price">$39.99</div>
+        <div class="gamecard__button"><button>Buy</button></div>
+      </div>
+    </div>
 
-+  <script src="script.js"></script>
+  </div>
+
+  <script src="script.js"></script>
 </body>
 </html>
 ```
