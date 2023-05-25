@@ -36,7 +36,7 @@ html, body {
 }
 ```
 
-3. เพิ่มโค้ดข้างล่างเข้าไปในไฟล์ `index.html` ตรงระหว่าง `<head>` และ `</head>`
+3. ก๊อปโค้ดข้างล่างนี้ไปไว้ระหว่าง `<head>` และ `</head>` ในไฟล์ `index.html`
 
 ```html
 <link rel="stylesheet" href="style.css">
