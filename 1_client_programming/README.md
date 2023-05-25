@@ -24,11 +24,8 @@ Reload the page to see result! :D
 2. Add this to `style.css`
 
 ```css
-html {
+html, body {
   font-family: sans-serif;
-}
-
-body {
   margin: 0;
   padding: 0;
   background: #000;
@@ -202,11 +199,8 @@ First to finish this step wins more snacks :D. Good luck!
 `style.css`
 
 ```diff
-html {
+html, body {
   font-family: sans-serif;
-}
-
-body {
   margin: 0;
   padding: 0;
   background: #000;
