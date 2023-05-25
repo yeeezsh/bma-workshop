@@ -1,9 +1,8 @@
 function App() {
   return (
     <>
-      <div className="gamelist">
+      <h1>React app</h1>
 
-      </div>
     </>
   );
 }
