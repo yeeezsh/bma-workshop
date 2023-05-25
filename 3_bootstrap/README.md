@@ -1,23 +1,23 @@
 # Chapter 3: React with Bootstrap
 
-## Step 1: Install React Bootstrap
-1. Type `Ctrl + C` in your terminal to terminate the website
-2. Type `yarn add react-bootstrap bootstrap` and press `Enter`
-3. Now your website should be able to use Bootstrap components
+## Step 1: ติดตั้ง React Bootstrap
+1. พิมพ์ `Ctrl + C` ใน Terminal เพื่อปิดเว็บไซต์
+2. พิมพ์ `yarn add react-bootstrap bootstrap` แล้วกด `Enter` เพื่อติดตั้ง Bootstrap
+3. พิมพ์ `yarn dev` แล้วกด `Enter` เพื่อเปิดเว็บไซต์ขึ้นมาใหม่
 
-4. Add Bootstrap CSS to your website by adding the following line to the top of `App.tsx`
-**Please make sure you import bootstrap.min.css before our style.css**
+4. เพิ่ม css ของ Bootstrap ลงไปในไฟล์ `App.tsx`
+**ต้องวาง css ของ Bootstrap ไว้ก่อนไฟล์ style.css ของเรา**
 
 ```diff
 + import 'bootstrap/dist/css/bootstrap.min.css';
   import './style.css';
 ```
 
-## Step 2: Use a basic Bootstrap component in your website
+## Step 2: ลองใช้ Bootstrap
 
-### Step 2.1: Replace the old css with Bootstrap css
+### Step 2.1: แก้ CSS เก่า
 
-1. Replace the content of `style.css` with the following code, because we don't need any custom styles anymore
+1. แก้ไฟล์ `style.css` ให้เหลือแค่ตามข้างล่างนี้ เพราะเราจะไปใช้ Bootstrap แทน
 
 ```css
 html, body {
@@ -26,17 +26,17 @@ html, body {
 }
 ```
 
-### Step 2.2: Apply Bootstrap Grid Components to layout your website
+### Step 2.2: ใช้ Bootstrap Grid Component ในการจัด Layout
 
 #### App.tsx
 
-1. Import `Container` from `react-bootstrap` by adding the following line to the top of `App.tsx`
+1. ก็อปโค้ดข้างล่างนี้ ไปไว้ด้านบนของไฟล์ `App.tsx`
 
 ```tsx
 import { Container } from 'react-bootstrap';
 ```
 
-2. Wrap your layout inside the responsive container
+2. ครอบโค้ดเก่าของเราให้อยู่ใน Container
 
 ```diff
   function App() {
@@ -62,13 +62,13 @@ import { Container } from 'react-bootstrap';
 
 #### GameCard.tsx
 
-1. Import `Row`, `Col` and `Button` from `react-bootstrap` by adding the following line to the top of `GameCard.tsx`
+1. ก็อปโค้ดข้างล่างนี้ ไปไว้ด้านบนของไฟล์ `GameCard.tsx`
 
 ```tsx
 import { Row, Col, Button } from 'react-bootstrap';
 ```
 
-2. Replace the `div` with class `gamecard` with the following code
+2. แก้ GameCard ของเรา โดยใช้ Row, Col และ Button ของ Bootstrap แทน
 
 ```diff
   const GameCard = (props: GameCardProps) => {
@@ -108,8 +108,9 @@ import { Row, Col, Button } from 'react-bootstrap';
   };
 ```
 
-3. Now you should see your layout is as you think it should be, but something is still wrong  
-Let's try replacing that bunch with the following code
+3. ตอนนี้ Layout จัดเรียงเรียบร้อยแล้ว แต่ยังขาด style ต่างๆ
+ก๊อปโค้ดข้างล่างไปวางแทน เพื่อเติม style ให้กับ GameCard
+
 
 ```tsx
 <Row className={`mt-2 mb-2 ${isBought ? 'bg-success' : 'bg-dark'}`}>
@@ -133,9 +134,13 @@ Let's try replacing that bunch with the following code
 </Row>
 ```
 
+## Step bonus: ทำให้ Refund ได้
+
+ใครทำให้เกมที่ซื้อไปแล้ว สามารถคลิกปุ่ม Refund กลับมาได้ รับรางวัลไปเลย!
+
 ---
 
-## At the end of this section, your code should look like this:
+## จบบทนี้แล้ว ทุกคนจะมีไฟล์หน้าตาแบบนี้:
 
 `style.css`
 
