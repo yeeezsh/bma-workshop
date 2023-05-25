@@ -24,17 +24,14 @@ Reload the page to see result! :D
 2. Add this to `style.css`
 
 ```css
-html {
+html, body {
   font-family: sans-serif;
-}
-
-body {
   margin: 0;
   padding: 0;
-  background: #000;
-  color: #e0e0e0;
+  background: #000 !important;
+  color: #e0e0e0 !important;
   width: 768px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 ```
 
@@ -202,17 +199,14 @@ First to finish this step wins more snacks :D. Good luck!
 `style.css`
 
 ```diff
-html {
+html, body {
   font-family: sans-serif;
-}
-
-body {
   margin: 0;
   padding: 0;
-  background: #000;
-  color: #e0e0e0;
+  background: #000 !important;
+  color: #e0e0e0 !important;
   width: 768px;
-  margin: 0 auto;
+  margin: 0 auto !important;
 }
 
 .gamecard {
