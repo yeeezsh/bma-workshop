@@ -6,20 +6,61 @@
 3. Now your website should be able to use Bootstrap components
 
 4. Add Bootstrap CSS to your website by adding the following line to the top of `App.tsx`
+**Please make sure you import bootstrap.min.css before our style.css**
 
 ```diff
 + import 'bootstrap/dist/css/bootstrap.min.css';
+  import './style.css';
 ```
 
 ## Step 2: Use a basic Bootstrap component in your website
 
-### Step 2.1: Delete the old styles
+### Step 2.1: Replace the old css with Bootstrap css
 
-1. Delete all the styles in `style.css` that start with `.gamecard`
+1. Replace the content of `style.css` with the following code, because we don't need any custom styles anymore
 
-2. You should now have only `html, body` in your `style.css` file
+```css
+html, body {
+  background: #000;
+  color: #e0e0e0;
+}
+```
 
 ### Step 2.2: Apply Bootstrap Grid Components to layout your website
+
+#### App.tsx
+
+1. Import `Container` from `react-bootstrap` by adding the following line to the top of `App.tsx`
+
+```tsx
+import { Container } from 'react-bootstrap';
+```
+
+2. Wrap your layout inside the responsive container
+
+```diff
+  function App() {
+    return (
+      <>
++       <Container>
+          <h1>Quick Steam Store</h1>
+
+          {games.map((game) => (
+            <GameCard
+              key={game.id}
+              image={game.image}
+              title={game.title}
+              rating={game.rating}
+              price={game.price}
+            />
+          ))}
++       </Container>
+      </>
+    );
+  }
+```
+
+#### GameCard.tsx
 
 1. Import `Row`, `Col` and `Button` from `react-bootstrap` by adding the following line to the top of `GameCard.tsx`
 
@@ -75,10 +116,7 @@ Let's try replacing that bunch with the following code
   <Col md={5} className="p-0">
     <img src={props.image} className="w-100 h-100" style={{ objectFit: 'cover' }} alt={props.title} />
   </Col>
-  <Col
-    md={7}
-    className="pt-2 pb-2 d-flex flex-column"
-  >
+  <Col md={7} className="pt-2 pb-2 d-flex flex-column">
     <h3 className="title">{props.title}</h3>
     <div className="rating">{props.rating} / 5</div>
     <h5 className="text-end align-items-end d-flex flex-row justify-content-end flex-grow-1">
@@ -103,13 +141,8 @@ Let's try replacing that bunch with the following code
 
 ```css
 html, body {
-  font-family: sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #000 !important;
-  color: #e0e0e0 !important;
-  width: 768px;
-  margin: 0 auto !important;
+  background: #000;
+  color: #e0e0e0;
 }
 ```
 
@@ -133,10 +166,7 @@ const GameCard = (props: GameCardProps) => {
       <Col md={5} className="p-0">
         <img src={props.image} className="w-100 h-100" style={{ objectFit: 'cover' }} alt={props.title} />
       </Col>
-      <Col
-        md={7}
-        className="pt-2 pb-2 d-flex flex-column"
-      >
+      <Col md={7} className="pt-2 pb-2 d-flex flex-column">
         <h3 className="title">{props.title}</h3>
         <div className="rating">{props.rating} / 5</div>
         <h5 className="text-end align-items-end d-flex flex-row justify-content-end flex-grow-1">
@@ -161,22 +191,26 @@ export default GameCard;
 
 ```tsx
 import GameCard from './GameCard';
+import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css';
 import { games } from './data';
-import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
     <>
-      {games.map((game) => (
-        <GameCard
-          key={game.id}
-          image={game.image}
-          title={game.title}
-          rating={game.rating}
-          price={game.price}
-        />
-      ))}
+      <Container>
+        <h1>Quick Steam Store</h1>
+
+        {games.map((game) => (
+          <GameCard
+            key={game.id}
+            image={game.image}
+            title={game.title}
+            rating={game.rating}
+            price={game.price}
+          />
+        ))}
+      </Container>
     </>
   );
 }

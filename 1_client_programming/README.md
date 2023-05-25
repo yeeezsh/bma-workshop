@@ -28,10 +28,10 @@ html, body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #000 !important;
-  color: #e0e0e0 !important;
+  background: #000;
+  color: #e0e0e0;
   width: 768px;
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 ```
 
@@ -203,10 +203,10 @@ html, body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background: #000 !important;
-  color: #e0e0e0 !important;
+  background: #000;
+  color: #e0e0e0;
   width: 768px;
-  margin: 0 auto !important;
+  margin: 0 auto;
 }
 
 .gamecard {
