@@ -1,8 +1,14 @@
+import GameCard from './GameCard';
+import './style.css';
+
 function App() {
   return (
     <>
-      <h1>React app</h1>
+      <h1>Quick Steam Store</h1>
 
+      <div className="gamelist">
+        <GameCard />
+      </div>
     </>
   );
 }
