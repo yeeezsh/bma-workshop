@@ -59,7 +59,7 @@ if (process.argv.length !== 4) {
 
 const endpoint = process.argv[2];
 const subdomain = process.argv[3];
-const distPath = path.join(__dirname, 'dist');
+const distPath = path.join(__dirname, './src/dist');
 
 // Get all files in the /dist directory
 const files = getFiles(distPath);
